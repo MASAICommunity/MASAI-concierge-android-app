@@ -1,0 +1,603 @@
+{
+  "Count": 1,
+  "Items": [
+    {
+      "IdentitySource": {
+        "S": "auth0"
+      },
+      "UserId": {
+        "S": "37667c41593739bd"
+      },
+      "esta": {
+        "M": {
+          "valid_until": {
+            "S": "01.01.2060"
+          },
+          "application_number": {
+            "S": "12341234"
+          }
+        }
+      },
+      "address_billing": {
+        "M": {
+          "zip": {
+            "S": "4020"
+          },
+          "country": {
+            "S": "\u00d6sterreich"
+          },
+          "city": {
+            "S": "Linz"
+          },
+          "company_name": {
+            "S": "Company"
+          },
+          "address_line_1": {
+            "S": "Zeile 1"
+          },
+          "address_line_2": {
+            "S": "Zeile 2"
+          },
+          "state": {
+            "S": "Ober\u00f6sterreich"
+          }
+        }
+      },
+      "private_payment": {
+        "M": {
+          "credit_card": {
+            "S": "does not exist"
+          },
+          "default_payment_method": {
+            "S": "1234"
+          }
+        }
+      },
+      "contact": {
+        "M": {
+          "primary_email": {
+            "S": "florian@5lvlup.com"
+          },
+          "primary_phone": {
+            "S": "+436507070809"
+          }
+        }
+      },
+      "created": {
+        "N": "1503496577767"
+      },
+      "passport": {
+        "M": {
+          "country": {
+            "S": "\u00d6sterreich"
+          },
+          "number": {
+            "S": "12341234"
+          },
+          "expiry": {
+            "S": "01.01.2060"
+          },
+          "city": {
+            "S": "Linz"
+          },
+          "date_issued": {
+            "S": "01.01.1970"
+          }
+        }
+      },
+      "preference": {
+        "M": {
+          "hotel": {
+            "M": {
+              "room_standards": {
+                "L": [
+                  {
+                    "S": "non_smoking"
+                  },
+                  {
+                    "S": "allergic"
+                  },
+                  {
+                    "S": "air_condition"
+                  }
+                ]
+              },
+              "amenities": {
+                "L": [
+                  {
+                    "S": "breakfast"
+                  },
+                  {
+                    "S": "wifi"
+                  },
+                  {
+                    "S": "parking"
+                  },
+                  {
+                    "S": "fitness"
+                  },
+                  {
+                    "S": "spa"
+                  },
+                  {
+                    "S": "pool"
+                  }
+                ]
+              },
+              "types": {
+                "L": [
+                  {
+                    "S": "apartment"
+                  },
+                  {
+                    "S": "business"
+                  },
+                  {
+                    "S": "suite"
+                  },
+                  {
+                    "S": "airport"
+                  },
+                  {
+                    "S": "airbnb"
+                  },
+                  {
+                    "S": "boutique"
+                  }
+                ]
+              },
+              "chains": {
+                "L": [
+                  {
+                    "S": "best_western"
+                  },
+                  {
+                    "S": "crowne_plaza"
+                  },
+                  {
+                    "S": "grand_city"
+                  },
+                  {
+                    "S": "hilton"
+                  },
+                  {
+                    "S": "design_hotels"
+                  }
+                ]
+              },
+              "loyalty_program": {
+                "L": [
+                  {
+                    "M": {
+                      "number": {
+                        "S": "2345678"
+                      },
+                      "id": {
+                        "S": "gold_points_plus"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "456789"
+                      },
+                      "id": {
+                        "S": "hyatt_gold_passport"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "34567890"
+                      },
+                      "id": {
+                        "S": "jumeirah_sirius"
+                      }
+                    }
+                  }
+                ]
+              },
+              "chains_blacklist": {
+                "L": [
+                  {
+                    "S": "design_hotels"
+                  },
+                  {
+                    "S": "best_western"
+                  },
+                  {
+                    "S": "crowne_plaza"
+                  },
+                  {
+                    "S": "hilton"
+                  },
+                  {
+                    "S": "holiday_inn"
+                  },
+                  {
+                    "S": "grand_city"
+                  }
+                ]
+              },
+              "location": {
+                "L": [
+                  {
+                    "S": "close_to_airport"
+                  },
+                  {
+                    "S": "central"
+                  },
+                  {
+                    "S": "quiet"
+                  }
+                ]
+              },
+              "room_location": {
+                "L": [
+                  {
+                    "S": "quiet"
+                  },
+                  {
+                    "S": "far_from_elevator"
+                  },
+                  {
+                    "S": "high_up"
+                  }
+                ]
+              },
+              "bed_types": {
+                "L": [
+                  {
+                    "S": "twin"
+                  },
+                  {
+                    "S": "double"
+                  },
+                  {
+                    "S": "king"
+                  }
+                ]
+              },
+              "categories": {
+                "L": [
+                  {
+                    "S": "first_class"
+                  },
+                  {
+                    "S": "superior"
+                  },
+                  {
+                    "S": "luxury"
+                  },
+                  {
+                    "S": "comfort"
+                  },
+                  {
+                    "S": "standard"
+                  },
+                  {
+                    "S": "tourist"
+                  }
+                ]
+              },
+              "anything_else": {
+                "S": "Keine weiteren Infos."
+              }
+            }
+          },
+          "flights": {
+            "M": {
+              "meal": {
+                "S": "vgml_vegan"
+              },
+              "seat": {
+                "S": "middle"
+              },
+              "booking_class_short_haul": {
+                "S": "premium_economy"
+              },
+              "seat_row": {
+                "S": "front"
+              },
+              "booking_class_long_haul": {
+                "S": "first_class"
+              },
+              "airlines_blacklist": {
+                "L": [
+                  {
+                    "S": "air_china"
+                  },
+                  {
+                    "S": "air_asia"
+                  },
+                  {
+                    "S": "airberlin"
+                  },
+                  {
+                    "S": "air_france"
+                  },
+                  {
+                    "S": "air_new_zealand"
+                  }
+                ]
+              },
+              "airline_loyalty_program": {
+                "L": [
+                  {
+                    "M": {
+                      "number": {
+                        "S": "3456789"
+                      },
+                      "id": {
+                        "S": "big"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "45678"
+                      },
+                      "id": {
+                        "S": "airpoints"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "3456789"
+                      },
+                      "id": {
+                        "S": "aadvantage"
+                      }
+                    }
+                  }
+                ]
+              },
+              "options": {
+                "L": [
+                  {
+                    "S": "no_bulkhead"
+                  },
+                  {
+                    "S": "not_close_to_bathroom"
+                  },
+                  {
+                    "S": "extra_leg_room"
+                  },
+                  {
+                    "S": "automatic_check_in"
+                  }
+                ]
+              },
+              "booking_class_medium_haul": {
+                "S": "business"
+              },
+              "airlines": {
+                "L": [
+                  {
+                    "S": "aeroflot"
+                  },
+                  {
+                    "S": "air_asia"
+                  },
+                  {
+                    "S": "air_new_zealand"
+                  },
+                  {
+                    "S": "air_france"
+                  },
+                  {
+                    "S": "airberlin"
+                  },
+                  {
+                    "S": "alitalia"
+                  },
+                  {
+                    "S": "all_nippon_airways"
+                  },
+                  {
+                    "S": "air_china"
+                  }
+                ]
+              },
+              "anything_else": {
+                "S": "Keine weiteren Infos."
+              }
+            }
+          },
+          "car": {
+            "M": {
+              "loyalty_programs": {
+                "L": [
+                  {
+                    "M": {
+                      "number": {
+                        "S": "345678"
+                      },
+                      "id": {
+                        "S": "hertz_gold"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "34567"
+                      },
+                      "id": {
+                        "S": "sixt_corporate"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "345678"
+                      },
+                      "id": {
+                        "S": "enterprise_plus"
+                      }
+                    }
+                  }
+                ]
+              },
+              "preferences": {
+                "L": [
+                  {
+                    "S": "automatic"
+                  },
+                  {
+                    "S": "electric"
+                  },
+                  {
+                    "S": "gps"
+                  },
+                  {
+                    "S": "4wheel"
+                  },
+                  {
+                    "S": "air_condition"
+                  }
+                ]
+              },
+              "booking_class": {
+                "S": "luxury"
+              },
+              "rental_companies": {
+                "L": [
+                  {
+                    "S": "enterprise"
+                  },
+                  {
+                    "S": "europcar"
+                  },
+                  {
+                    "S": "sixt"
+                  },
+                  {
+                    "S": "hertz"
+                  }
+                ]
+              },
+              "extras": {
+                "L": [
+                  {
+                    "S": "kilometers"
+                  },
+                  {
+                    "S": "insurance"
+                  }
+                ]
+              },
+              "anything_else": {
+                "S": "Keine weiteren Infos."
+              },
+              "type": {
+                "S": "sport"
+              }
+            }
+          },
+          "train": {
+            "M": {
+              "loyalty_programs": {
+                "L": [
+                  {
+                    "M": {
+                      "number": {
+                        "S": "345678"
+                      },
+                      "id": {
+                        "S": "obb_vorteilscard"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "345678"
+                      },
+                      "id": {
+                        "S": "sbb_halbtax"
+                      }
+                    }
+                  },
+                  {
+                    "M": {
+                      "number": {
+                        "S": "45678"
+                      },
+                      "id": {
+                        "S": "db_bahncard_50_first"
+                      }
+                    }
+                  }
+                ]
+              },
+              "anything_else": {
+                "S": "Keine weiteren Infos."
+              }
+            }
+          }
+        }
+      },
+      "modified": {
+        "N": "1503496577767"
+      },
+      "address_private": {
+        "M": {
+          "zip": {
+            "S": "4020"
+          },
+          "address_line_1": {
+            "S": "Zeile 1"
+          },
+          "country": {
+            "S": "\u00d6sterreich"
+          },
+          "address_line_2": {
+            "S": "Zeile 2"
+          },
+          "state": {
+            "S": "Ober\u00f6sterreich"
+          },
+          "city": {
+            "S": "Linz"
+          }
+        }
+      },
+      "personal": {
+        "M": {
+          "nationality": {
+            "S": "\u00d6sterreich"
+          },
+          "birth_date": {
+            "S": "07.01.1985"
+          },
+          "company_name": {
+            "S": "5lvlup GmbH"
+          },
+          "vat": {
+            "S": "ATUxxxxxxxxxBlah"
+          },
+          "last_name": {
+            "S": "Rath"
+          },
+          "middle_name": {
+            "S": "Herbert"
+          },
+          "title": {
+            "S": "Dr."
+          },
+          "first_name": {
+            "S": "Florian"
+          }
+        }
+      }
+    }
+  ],
+  "ScannedCount": 1
+}

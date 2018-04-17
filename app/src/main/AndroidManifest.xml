@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="solutions.masai.masai.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="solutions.masai.masai.android.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDM7ITA98ZmmWNmGsQdfhMOtFuvCW8OPEk" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="solutions.masai.masai.android.conversations.conversation.ConversationsController"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="solutions.masai.masai.android.add_host.AddHostController"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="solutions.masai.masai.android.my_tickets.MyTicketsController"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="solutions.masai.masai.android.hotel_reservation.HotelReservationController" />
+        <activity android:name="solutions.masai.masai.android.flight_reservation.FlightReservationController" />
+        <activity android:name="solutions.masai.masai.android.train_reservation.TrainReservationController" />
+        <activity android:name="solutions.masai.masai.android.activity_reservation.ActivityReservationController" />
+        <activity android:name="solutions.masai.masai.android.car_reservation.CarReservationController" />
+        <activity
+            android:name="solutions.masai.masai.android.login.LoginController"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="masai-prod.eu.auth0.com"
+                    android:pathPrefix="/android/solutions.masai.masai.android/callback"
+                    android:scheme="masai" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="solutions.masai.masai.android.register.RegisterController"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="solutions.masai.masai.android.chat.ChatController"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="solutions.masai.masai.android.password_reset.PasswordResetController"
+            android:label="@string/reset_password"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="solutions.masai.masai.android.profile.ProfileController"
+            android:label="@string/profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="solutions.masai.masai.android.present_image.PresentImageController"
+            android:label="@string/image"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="solutions.masai.masai.android.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="solutions.masai.masai.android.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8c907f672a6b8da15c5866468e31efad9c0941bb"
+            />
+
+        <activity android:name="solutions.masai.masai.android.profile.controller.my_data.PersonalInfoController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.my_data.ContactInfoController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.my_data.PrivateAddressController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.my_data.BillingAddressController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.my_data.PaymentController"></activity>
+
+        <activity android:name="solutions.masai.masai.android.profile.controller.access_privileges.AccessPrivilegeSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.PassportSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.EstaSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.FlightSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.RailSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.CarSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.profile.controller.journey_preferences.HotelSettingsController"></activity>
+        <activity android:name="solutions.masai.masai.android.conversations.history.ConversationHistoryController"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"/>
+
+    </application>
+
+</manifest>

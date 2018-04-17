@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216312725071",
+    "firebase_url": "https://db-concierge.firebaseio.com",
+    "project_id": "db-concierge",
+    "storage_bucket": "db-concierge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216312725071:android:27a743a8a9fa5991",
+        "android_client_info": {
+          "package_name": "solutions.masai.masai.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216312725071-kc4mda8q6hj6f4sod791o3hhkb3idaj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfNsJ5KxFVs8IhECLU2LlH1P6pPkhu5wQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
