@@ -176,6 +176,7 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 			serializeList(ret, obj.getCategories(), "categories");
 //			anything_else < s
 			serializeString(ret, obj.getAnythingElse(), "anything_else");
+			serializeString(ret, obj.getLoyalityEnd(), "loyalty_date");
 
 //			loyalty_program < list
 			List<HashMap<String, Object>> loyaltyPrograms = new LinkedList<>();
@@ -220,6 +221,7 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 			serializeString(ret, obj.getType(), "type");
 //			booking_class < s
 			serializeString(ret, obj.getBookingClass(), "booking_class");
+			serializeString(ret, obj.getLoyalityEnd(), "loyalty_date");
 
 		}
 		return ret;
@@ -250,6 +252,7 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 
 //			anything_else < s
 			serializeString(ret, obj.getAnythingElse(), "anything_else");
+			serializeString(ret, obj.getLoyalityEnd(), "loyalty_date");
 		}
 		return ret;
 	}
@@ -287,6 +290,7 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 			if(!loyaltyPrograms.isEmpty()) {
 				ret.put("airline_loyalty_program", addList(loyaltyPrograms));
 			}
+			serializeString(ret, obj.getLoyalityEnd(), "loyalty_date");
 		}
 		return ret;
 	}
@@ -360,6 +364,7 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 
 		//contact
 		HashMap<String, Object> contact = serializeContact(src.getContactInfo());
+
 		if(!contact.isEmpty()) {
 			resultHash.put("contact", addMap(contact));
 		}
@@ -378,6 +383,11 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 
 		//personal
 		HashMap<String, Object> personal = serializePersonal(src.getPersonalData());
+		if(!personal.isEmpty()) {
+			if (src.getContactInfo()!=null && src.getContactInfo().getPersonalEmail()!=null) {
+				personal.put("email", src.getContactInfo().getPersonalEmail());
+			}
+		}
 		if(!personal.isEmpty()) {
 			resultHash.put("personal", addMap(personal));
 		}
@@ -460,6 +470,12 @@ public class TravelfolderUserConverter implements JsonSerializer<TravelfolderUse
 			ContactInfo contactInfo = new ContactInfo();
 			contactInfo.setPrimaryEmail(getStringField(jsonContactInfo, "primary_email"));
 			contactInfo.setPrimaryPhone(getStringField(jsonContactInfo, "primary_phone"));
+
+			JsonObject jsonContactInfo2 = getMapObject(jsonObject, "personal");
+			if (jsonContactInfo2 != null) {
+
+				contactInfo.setPersonalEmail(getStringField(jsonContactInfo, "email"));
+			}
 			user.setContactInfo(contactInfo);
 		}
 		//endregion

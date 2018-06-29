@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.content.LocalBroadcastManager;
@@ -128,6 +129,12 @@ public class ConversationsController extends BaseConversationController
 			break;
 		case R.id.nav_conversation_history:
 			launchConversationHistory();
+			break;
+		case R.id.nav_privacy:
+			String url = "https://support.journey-concierge.com/privacy-policy";
+			Intent ix = new Intent(Intent.ACTION_VIEW);
+			ix.setData(Uri.parse(url));
+			startActivity(ix);
 			break;
 		case R.id.nav_help:
 			Intent i = new Intent(Intent.ACTION_SEND);

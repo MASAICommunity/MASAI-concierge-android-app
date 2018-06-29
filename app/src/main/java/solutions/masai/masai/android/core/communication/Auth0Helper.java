@@ -9,6 +9,7 @@ import com.auth0.android.authentication.AuthenticationAPIClient;
 import com.auth0.android.authentication.AuthenticationException;
 import com.auth0.android.authentication.request.SignUpRequest;
 import com.auth0.android.callback.AuthenticationCallback;
+import com.auth0.android.callback.BaseCallback;
 import com.auth0.android.provider.AuthCallback;
 import com.auth0.android.provider.WebAuthProvider;
 import com.auth0.android.request.AuthenticationRequest;
@@ -67,6 +68,20 @@ public class Auth0Helper {
 
     public static void clear() {
         instance = null;
+    }
+
+    public void resetPasswort(final String email, IResetCallback callback) {
+        authentication.resetPassword(email, CONNECTION_NAME).start(new BaseCallback<Void, AuthenticationException>() {
+            @Override
+            public void onSuccess(Void payload) {
+                callback.success();
+            }
+
+            @Override
+            public void onFailure(AuthenticationException error) {
+                callback.error();
+            }
+        });
     }
 
     public void singUp(final String email, final String password, final ISingUp listener) {
@@ -339,6 +354,11 @@ public class Auth0Helper {
 
         void onBadCredentials();
 
+    }
+    public interface IResetCallback {
+
+        void success();
+        void error();
     }
 
     public interface ISingUp {

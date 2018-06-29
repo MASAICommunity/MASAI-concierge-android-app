@@ -127,6 +127,9 @@ public class JourneyPreferencesDeserializerHelper {
 			}
 
 			hotel.setAnythingElse(getStringField(jsonHotel, "anything_else"));
+
+
+			hotel.setLoyalityEnd(getStringField(jsonHotel, "loyalty_date"));
 		}
 
 		return hotel;
@@ -183,6 +186,7 @@ public class JourneyPreferencesDeserializerHelper {
 			}
 
 			flight.setAnythingElse(getStringField(jsonFlight, "anything_else"));
+			flight.setLoyalityEnd(getStringField(jsonFlight, "loyalty_date"));
 		}
 		return flight;
 	}
@@ -235,6 +239,7 @@ public class JourneyPreferencesDeserializerHelper {
 			}
 
 			car.setAnythingElse(getStringField(jsonCar, "anything_else"));
+			car.setLoyalityEnd(getStringField(jsonCar, "loyalty_date"));
 		}
 
 		return car;
@@ -288,9 +293,10 @@ public class JourneyPreferencesDeserializerHelper {
 				}
 				train.setLoyaltyPrograms(trainLoyaltyPrograms);
 
-				train.setAnythingElse(getStringField(jsonTrain, "anything_else"));
 
 			}
+			train.setAnythingElse(getStringField(jsonTrain, "anything_else"));
+			train.setLoyalityEnd(getStringField(jsonTrain, "loyalty_date"));
 		}
 
 		return train;

@@ -88,7 +88,7 @@ public class C {
     public static final int SEC_5 = 5000;
     private static final String GOOGLE_PLACES_API_KEY = "AIzaSyBlLXsEscJsJg2CrV8JGeiRFG7D9FaympE";
     public static final String GOOGLE_PLACES_PHOTO_URL = "https://maps.googleapis.com/maps/api/place/photo?key=".concat(GOOGLE_PLACES_API_KEY).concat("&photoreference=%s&maxwidth=%d");
-    public static final String HELP_UND_FEEDBACK_EMAIL = "office@mogree.com";
+    public static final String HELP_UND_FEEDBACK_EMAIL = "kontakt@reisebuddy.com";
     /**
      * agreed with both sides
      */
