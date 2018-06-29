@@ -579,6 +579,12 @@ public class ChatAdapter extends ArrayAdapter<Message> {
     private void loadAvatarImage(Message message, ViewHolder viewHolder) {
         String username = message.getUser().getUsername();
         String rocketchatUrl = ConnectionManager.getInstance().getHostUrlByRoomId(message.getRoomId());
+        if (rocketchatUrl==null) {
+            return;
+        }
+        if (!rocketchatUrl.endsWith("/")) {
+            rocketchatUrl += "/";
+        }
         Glide.with(getContext()).load(rocketchatUrl + C.ROCKETCHAT_AVATAR_PARTIAL_ROUTE + username)
                 .listener(new RequestListener<String, GlideDrawable>() {
                     @Override
