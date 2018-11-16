@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EaseConnect_1.0-release/EaseConnect_1.0-release.iml" filepath="$PROJECT_DIR$/EaseConnect_1.0-release/EaseConnect_1.0-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EmojiOneAndroidLibrary/EmojiOneAndroidLibrary.iml" filepath="$PROJECT_DIR$/EmojiOneAndroidLibrary/EmojiOneAndroidLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MASAI-concierge-android-app.iml" filepath="$PROJECT_DIR$/MASAI-concierge-android-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jericho-html-3.4/jericho-html-3.4.iml" filepath="$PROJECT_DIR$/jericho-html-3.4/jericho-html-3.4.iml" />
+    </modules>
+  </component>
+</project>
