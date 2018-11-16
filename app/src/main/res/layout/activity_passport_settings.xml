@@ -1,0 +1,146 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/medium_grey">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin_l"
+			android:layout_marginLeft="@dimen/margin_m"
+			android:layout_marginRight="@dimen/margin_m"
+			android:layout_marginTop="@dimen/margin_m"
+			android:background="@drawable/round_corners_dirty_white"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical"
+			android:paddingBottom="@dimen/margin_m"
+			android:paddingLeft="@dimen/margin_m"
+			android:paddingRight="@dimen/margin_m">
+
+			<com.tolstykh.textviewrichdrawable.TextViewRichDrawable
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin_m"
+				android:background="@null"
+				android:drawableLeft="@drawable/icon_personal_info"
+				android:drawablePadding="@dimen/margin_xl"
+				android:drawableRight="@drawable/icon_arrow_bottom"
+				android:foreground="?selectableItemBackground"
+				android:gravity="center|start"
+				android:text="@string/passport"
+				android:textColor="@color/semitransparent_dark_grey"
+				android:textSize="@dimen/text_size_sl"
+				app:compoundDrawableHeight="@dimen/textview_profile_drawable_size"
+				app:compoundDrawableWidth="@dimen/textview_profile_drawable_size"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/light_grey"
+				android:layout_marginBottom="@dimen/margin_m"
+				android:layout_marginTop="@dimen/margin_m"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/passport_number"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/medium_grey"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_passport_number"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/country_of_issuance"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/medium_grey"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+					android:id="@+id/activity_passport_country_of_issuance"
+					style="@style/EditTextRichDrawableStyle"
+					android:drawableRight="@drawable/icon_edit"
+					android:textColor="@color/white"
+					app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+					app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+					app:drawableTint="@color/medium_grey"
+					android:layout_centerInParent="true"/>
+
+				<android.support.v7.widget.AppCompatSpinner
+					android:id="@+id/activity_passport_country_of_issuance_spinner"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_m"
+					android:layout_centerInParent="true"/>
+
+			</RelativeLayout>
+
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/city_of_issuance"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/medium_grey"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_passport_city_of_issuance"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/date_issued"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/medium_grey"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_passport_date_issued"
+				style="@style/EditTextRichDrawableStyle"
+				android:inputType="date"
+				android:clickable="true"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/expiry_date"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/medium_grey"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_passport_expiry_date"
+				style="@style/EditTextRichDrawableStyle"
+				android:inputType="date"
+				android:clickable="true"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+		</LinearLayout>
+	</ScrollView>
+
+</layout>

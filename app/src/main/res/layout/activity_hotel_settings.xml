@@ -1,0 +1,23 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/medium_grey">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/margin_m"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:id="@+id/activity_hotel_settings_linear_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/round_corners_dirty_white"
+				android:orientation="vertical">
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</layout>

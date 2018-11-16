@@ -131,7 +131,7 @@ public class ConversationsController extends BaseConversationController
 			launchConversationHistory();
 			break;
 		case R.id.nav_privacy:
-			String url = "https://support.journey-concierge.com/privacy-policy";
+			String url = "https://www.aignerart.com/masai-privacy";
 			Intent ix = new Intent(Intent.ACTION_VIEW);
 			ix.setData(Uri.parse(url));
 			startActivity(ix);

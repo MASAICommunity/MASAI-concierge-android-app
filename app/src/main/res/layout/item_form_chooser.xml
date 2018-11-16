@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+	android:paddingRight="@dimen/textview_profile_padding_horizontal">
+
+	<TextView
+		android:id="@+id/item_form_chooser_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="*---*"
+		android:textSize="@dimen/text_size_m"
+		android:textColor="@color/medium_grey"/>
+
+	<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+		android:id="@+id/item_form_chooser_edit_text"
+		style="@style/EditTextRichDrawableStyle"
+		android:clickable="false"
+		android:focusable="false"
+		android:drawableRight="@drawable/icon_edit"
+		android:textColor="@color/white"
+		android:layout_below="@+id/item_form_chooser_text_view"
+		app:drawableTint="@color/medium_grey"
+		app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+		app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+		/>
+
+	<android.support.v7.widget.AppCompatSpinner
+		android:id="@+id/item_form_chooser_spinner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_m"
+		android:layout_below="@+id/item_form_chooser_text_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+	android:paddingRight="@dimen/textview_profile_padding_horizontal">
+
+	<com.tolstykh.textviewrichdrawable.TextViewRichDrawable
+		android:id="@+id/fragment_preferences_menu_textfield"
+		style="@style/TextViewRichDrawableStyle"
+		android:layout_marginTop="@dimen/margin_m"
+		android:drawableRight="@drawable/icon_arrow_right"
+		android:paddingTop="@dimen/textview_profile_padding_vertical"
+		android:paddingBottom="@dimen/textview_profile_padding_vertical"
+		android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+		android:paddingRight="@dimen/textview_profile_padding_horizontal"
+		app:compoundDrawableHeight="@dimen/textview_profile_drawable_size"
+		app:compoundDrawableWidth="@dimen/textview_profile_drawable_size"/>
+
+</RelativeLayout>

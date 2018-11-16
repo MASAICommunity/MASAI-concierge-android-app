@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_hotel_reservation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:background="@drawable/shadow_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_flight_airhost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_l"
+                    android:layout_marginLeft="@dimen/margin_l"
+                    android:layout_marginRight="@dimen/margin_l"
+                    android:layout_marginStart="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
+                    android:textSize="@dimen/text_size_sl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginEnd="@dimen/margin_l"
+                    android:layout_marginLeft="@dimen/margin_l"
+                    android:layout_marginRight="@dimen/margin_l"
+                    android:layout_marginStart="@dimen/margin_l"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_flight_departure_airport_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_m"
+                        android:layout_marginRight="@dimen/margin_m"
+                        android:textSize="@dimen/text_size_4xl" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_airplanemode_active" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_xxs"
+                        android:layout_weight="1"
+                        android:background="@color/light_grey" />
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:background="@drawable/circle_bg_grey" />
+
+                    <TextView
+                        android:id="@+id/activity_flight_arrival_airport_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_m"
+                        android:layout_marginStart="@dimen/margin_m"
+                        android:gravity="end"
+                        android:textSize="@dimen/text_size_4xl" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_gravity="start"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_flight_departure_date"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_departure_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/terminal"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_departure_terminal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gate"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_departure_gate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_gray"
+                            android:id="@+id/activity_flight_arrival_date"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_arrival_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/terminal"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_arrival_terminal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gate"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/activity_flight_arrival_gate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_l" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/flight_tickets"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/activity_flight_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passenger_name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/activity_flight_passenger_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seat"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/activity_flight_seat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_l"
+                    android:paddingEnd="@dimen/margin_l"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingRight="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirmation_number"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/activity_confirmation_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_xl" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/superlight_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_xl"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/hotel_icon_width"
+                        android:layout_height="@dimen/hotel_icon_width"
+                        android:layout_marginEnd="@dimen/margin_l"
+                        android:layout_marginRight="@dimen/margin_l"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/flight_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_sl" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/superlight_grey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_xl"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/hotel_icon_width"
+                        android:layout_height="@dimen/hotel_icon_width"
+                        android:layout_marginEnd="@dimen/margin_l"
+                        android:layout_marginRight="@dimen/margin_l"
+                        android:src="@drawable/ic_phone_res" />
+
+                    <TextView
+                        android:id="@+id/flight_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_sl" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

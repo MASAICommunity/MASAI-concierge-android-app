@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_car_reservation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:background="@drawable/shadow_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/car_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_l"
+                    android:layout_marginLeft="@dimen/margin_l"
+                    android:layout_marginRight="@dimen/margin_l"
+                    android:layout_marginStart="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
+                    android:textSize="@dimen/text_size_sl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginEnd="@dimen/margin_l"
+                    android:layout_marginLeft="@dimen/margin_l"
+                    android:layout_marginRight="@dimen/margin_l"
+                    android:layout_marginStart="@dimen/margin_l"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/car_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_m"
+                        android:layout_marginRight="@dimen/margin_m"
+                        android:textSize="@dimen/text_size_4xl" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_type"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/car_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_collection_date"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/car_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_collection_address"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/car_start_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_target_date"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/car_end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dirty_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_target_address"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/car_end_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_l" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_l"
+                    android:paddingEnd="@dimen/margin_l"
+                    android:paddingLeft="@dimen/margin_l"
+                    android:paddingRight="@dimen/margin_l"
+                    android:paddingStart="@dimen/margin_l"
+                    android:paddingTop="@dimen/margin_l">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirmation_number"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/activity_confirmation_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_xl" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/superlight_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_xl"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/hotel_icon_width"
+                        android:layout_height="@dimen/hotel_icon_width"
+                        android:layout_marginEnd="@dimen/margin_l"
+                        android:layout_marginRight="@dimen/margin_l"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/flight_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_sl" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxs"
+                    android:background="@color/superlight_grey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_xl"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/hotel_icon_width"
+                        android:layout_height="@dimen/hotel_icon_width"
+                        android:layout_marginEnd="@dimen/margin_l"
+                        android:layout_marginRight="@dimen/margin_l"
+                        android:src="@drawable/ic_phone_res" />
+
+                    <TextView
+                        android:id="@+id/flight_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_sl" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

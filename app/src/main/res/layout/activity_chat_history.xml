@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<LinearLayout
+		android:id="@+id/activity_chat_history"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/dirty_white"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<android.support.design.widget.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/activity_chat_history_toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:layout_scrollFlags="scroll|enterAlways"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+				<ImageView
+					android:id="@+id/activity_chat_history_filter"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right|center_vertical"
+					android:paddingBottom="@dimen/margin_l"
+					android:paddingTop="@dimen/margin_l"
+					android:src="@drawable/icon_filter"/>
+			</android.support.v7.widget.Toolbar>
+		</android.support.design.widget.AppBarLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_chat_history_search_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:clickable="true"
+			android:orientation="vertical"
+			android:padding="@dimen/margin_m">
+
+			<RadioGroup
+				android:id="@+id/activity_chat_history_toggle_search_category"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_m"
+				android:layout_marginLeft="@dimen/margin_xxs"
+				android:clickable="true"
+				android:orientation="horizontal"
+				android:weightSum="1">
+
+				<ToggleButton
+					android:id="@+id/activity_chat_history_toggle_text"
+					android:layout_width="wrap_content"
+					android:layout_height="32dp"
+					android:layout_weight="0.5"
+					android:background="@drawable/tab_button_left"
+					android:checked="true"
+					android:text="@string/text"
+					android:textColor="@drawable/toggle_text"
+					android:textOff="@string/text"
+					android:textOn="@string/text"/>
+
+				<ToggleButton
+					android:id="@+id/activity_chat_history_search_toggle_date"
+					android:layout_width="wrap_content"
+					android:layout_height="32dp"
+					android:layout_marginStart="-2dp"
+					android:layout_weight="0.5"
+					android:background="@drawable/tab_button_right"
+					android:text="@string/date"
+					android:textColor="@drawable/toggle_text"
+					android:textOff="@string/date"
+					android:textOn="@string/date"/>
+			</RadioGroup>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_chat_history_search_input"
+				style="@style/EditTextRichDrawableSearchStyle"
+				android:layout_height="32dp"
+				android:drawableRight="@drawable/ic_search_black_24dp"
+				android:textColor="@color/cardview_dark_background"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<Button
+				android:id="@+id/activity_chat_history_search_button"
+				android:layout_width="wrap_content"
+				android:layout_height="32dp"
+				android:layout_gravity="right"
+				android:layout_marginTop="@dimen/margin_m"
+				android:background="@drawable/search_button"
+				android:text="@string/search"
+				android:textColor="@color/colorPrimary"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/activity_chat_history_empty_screen"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/margin_m"
+			android:layout_marginRight="@dimen/margin_m"
+			android:gravity="center"
+			android:text="@string/no_history_available"
+			android:textColor="@color/colorPrimaryDark"
+			android:textSize="@dimen/text_size_l"
+			android:visibility="gone"/>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/activity_chat_history_room_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone"/>
+	</LinearLayout>
+</layout>

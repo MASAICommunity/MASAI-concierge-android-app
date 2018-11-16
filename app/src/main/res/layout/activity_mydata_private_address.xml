@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/medium_grey">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin_l"
+			android:layout_marginLeft="@dimen/margin_m"
+			android:layout_marginRight="@dimen/margin_m"
+			android:layout_marginTop="@dimen/margin_m"
+			android:background="@drawable/round_corners_dirty_white"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical"
+			android:paddingBottom="@dimen/margin_m"
+			android:paddingLeft="@dimen/margin_m"
+			android:paddingRight="@dimen/margin_m">
+
+			<com.tolstykh.textviewrichdrawable.TextViewRichDrawable
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin_m"
+				android:background="@null"
+				android:drawableLeft="@drawable/icon_address"
+				android:drawablePadding="@dimen/margin_xl"
+				android:drawableRight="@drawable/icon_arrow_bottom"
+				android:foreground="?selectableItemBackground"
+				android:gravity="center|start"
+				android:text="@string/private_address"
+				android:textColor="@color/semitransparent_dark_grey"
+				android:textSize="@dimen/text_size_sl"
+				app:compoundDrawableHeight="@dimen/textview_profile_drawable_size"
+				app:compoundDrawableWidth="@dimen/textview_profile_drawable_size"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/margin_m"
+				android:layout_marginTop="@dimen/margin_m"
+				android:background="@color/light_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/address_line_1"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_mydata_private_address_line1"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/address_line_2"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_mydata_private_address_line2"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/city"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_mydata_private_address_city"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/state"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_mydata_private_address_state"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/zip"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+				android:id="@+id/activity_mydata_private_address_zip"
+				style="@style/EditTextRichDrawableStyle"
+				android:drawableRight="@drawable/icon_edit"
+				app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+				app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+				app:drawableTint="@color/medium_grey"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/country"
+				android:textColor="@color/medium_grey"
+				android:textSize="@dimen/text_size_m"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+					android:id="@+id/activity_mydata_private_address_country"
+					style="@style/EditTextRichDrawableStyle"
+					android:layout_centerInParent="true"
+					android:drawableRight="@drawable/icon_edit"
+					android:textColor="@color/white"
+					app:compoundDrawableHeight="@dimen/edittext_drawable_size"
+					app:compoundDrawableWidth="@dimen/edittext_drawable_size"
+					app:drawableTint="@color/medium_grey"/>
+
+				<android.support.v7.widget.AppCompatSpinner
+					android:id="@+id/activity_mydata_private_address_country_spinner"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_marginTop="@dimen/margin_m"/>
+
+			</RelativeLayout>
+
+			<CheckBox
+				android:id="@+id/activity_mydata_private_address_is_billing_address"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/is_billing_address_same" />
+
+		</LinearLayout>
+	</ScrollView>
+</layout>

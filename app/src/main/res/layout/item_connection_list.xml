@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<RelativeLayout
+		android:id="@+id/conversation_item_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/margin_s"
+		android:paddingTop="@dimen/margin_s">
+
+		<LinearLayout
+			android:id="@+id/conversation_item_logo"
+			android:layout_width="@dimen/conversation_list_logo_diameter"
+			android:layout_height="@dimen/conversation_list_logo_diameter"
+			android:layout_gravity="bottom"
+			android:layout_marginBottom="@dimen/margin_xs"
+			android:layout_marginEnd="@dimen/margin_m"
+			android:layout_marginLeft="@dimen/margin_m"
+			android:layout_marginRight="@dimen/margin_m"
+			android:layout_marginStart="@dimen/margin_m"
+			android:background="@drawable/circle_bg_red"
+			android:gravity="center"
+			android:padding="@dimen/margin_m">
+
+			<TextView
+				android:id="@+id/conversation_item_logo_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="AS"
+				android:textAlignment="center"
+				android:textAllCaps="true"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_l"
+				android:textStyle="bold"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/conversation_item_logo"
+			android:layout_toLeftOf="@+id/item_connection_list_message_time_ll"
+			android:layout_toRightOf="@+id/conversation_item_logo"
+			android:layout_toStartOf="@+id/item_connection_list_message_time_ll"
+			android:layout_weight="1"
+			android:gravity="center_vertical|start"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/item_connection_list_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="@dimen/text_size_l"
+				android:textColor="@color/colorPrimaryDark"/>
+
+			<TextView
+				android:id="@+id/item_connection_list_last_message"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/colorPrimaryDark"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/item_connection_list_message_time_ll"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginEnd="@dimen/margin_m"
+			android:layout_marginRight="@dimen/margin_m"
+			android:gravity="center_vertical|end"
+			android:paddingTop="@dimen/margin_s">
+
+			<TextView
+				android:id="@+id/item_connection_list_last_message_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/text_size_m"
+				android:textColor="@color/colorPrimaryDark"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+</layout>

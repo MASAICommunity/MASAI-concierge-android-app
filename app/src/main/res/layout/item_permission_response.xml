@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_permission_response"
+    android:textColor="@color/medium_grey"
+    android:textSize="@dimen/text_size_lm"
+    android:layout_margin="@dimen/margin_m"
+    android:text="@string/request_travelfolder_permission"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" />

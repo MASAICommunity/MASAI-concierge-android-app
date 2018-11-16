@@ -1,0 +1,40 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/medium_grey"
+		android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+		android:paddingRight="@dimen/textview_profile_padding_horizontal"
+		android:paddingTop="@dimen/textview_profile_padding_horizontal">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/rounded_background">
+
+			<include
+				android:id="@+id/activity_esta_settings_header"
+				layout="@layout/item_form_header"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<include
+				android:id="@+id/activity_esta_settings_text"
+				layout="@layout/item_form_text"
+				android:layout_below="@id/activity_esta_settings_header"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<include
+				android:id="@+id/activity_esta_settings_date"
+				layout="@layout/item_form_date"
+				android:layout_below="@id/activity_esta_settings_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</layout>

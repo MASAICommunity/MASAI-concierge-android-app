@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="@dimen/textview_profile_padding_horizontal"
+	android:layout_marginRight="@dimen/textview_profile_padding_horizontal"
+	android:background="@drawable/round_corners_light_grey">
+
+	<RelativeLayout
+		android:id="@+id/item_form_spinner_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.AppCompatSpinner
+			android:id="@+id/item_form_spinner"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/item_form_element_height"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentLeft="true"/>
+
+		<ImageView
+			android:layout_width="@dimen/edittext_drawable_size"
+			android:layout_height="@dimen/edittext_drawable_size"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/icon_edit"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="@dimen/margin_s"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/item_form_spinner_ll">
+
+		<com.tolstykh.textviewrichdrawable.EditTextRichDrawable
+			android:id="@+id/item_form_text_field"
+			style="@style/TextViewRichDrawableStyle"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/item_form_element_height"
+			android:layout_weight=".65"
+			android:layout_below="@id/item_form_spinner"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentBottom="true"
+			android:text=""
+			android:maxLines="1"
+			android:inputType="text"
+			android:layout_marginLeft="@dimen/margin_s"
+			android:layout_marginRight="@dimen/margin_s"
+			android:layout_marginBottom="@dimen/margin_s"
+			android:paddingTop="@dimen/textview_profile_padding_vertical"
+			android:paddingBottom="@dimen/textview_profile_padding_vertical"
+			android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+			android:paddingRight="@dimen/textview_profile_padding_horizontal"
+			app:compoundDrawableHeight="@dimen/textview_profile_drawable_size"
+			app:compoundDrawableWidth="@dimen/textview_profile_drawable_size"/>
+
+		<android.support.v7.widget.AppCompatButton
+			android:id="@+id/item_form_button"
+			style="@style/FormButton"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/item_form_element_height"
+			android:layout_weight=".35"
+			android:layout_marginBottom="@dimen/margin_s"
+			android:layout_below="@+id/item_form_spinner"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@id/item_form_text_field"
+			android:background="@color/colorPrimary"
+			android:paddingTop="5dp"
+			android:text="@string/form_list_addbutton"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/textview_profile_padding_horizontal"
+	android:paddingRight="@dimen/textview_profile_padding_horizontal">
+
+	<android.support.v7.widget.AppCompatCheckedTextView
+		android:id="@+id/item_form_checked_text_field"
+		style="@style/TextViewRichDrawableStyle"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="@dimen/margin_m"
+		android:padding="@dimen/margin_m"
+		android:layout_height="@dimen/item_form_element_height"/>
+
+</RelativeLayout>

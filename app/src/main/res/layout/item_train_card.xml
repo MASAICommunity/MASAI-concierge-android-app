@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/card_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_m"
+    android:paddingLeft="@dimen/margin_m"
+    android:paddingStart="@dimen/margin_m"
+    android:paddingTop="@dimen/margin_m">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_rect"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_m">
+
+        <TextView
+            android:id="@+id/train_card_travel_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_l"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/train_card_place_a_to_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_lm" />
+
+        <TextView
+            android:id="@+id/train_card_price_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:textSize="@dimen/text_size_smm" />
+
+        <TextView
+            android:id="@+id/train_card_price_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_smm" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/train_card_book"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_view_height"
+            android:layout_gravity="start|bottom"
+            android:background="@drawable/round_bg_accent"
+            android:gravity="center"
+            android:paddingEnd="@dimen/margin_3xl"
+            android:paddingLeft="@dimen/margin_3xl"
+            android:paddingRight="@dimen/margin_3xl"
+            android:paddingStart="@dimen/margin_3xl"
+            android:text="@string/book"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">MASAI Concierge Beta</string>
+
+    <string name="navigation_drawer_open">Seitenmenü öffnen</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="nav_help">Hilfe \u0026 Feedback</string>
+    <string name="title_activity_login">Anmeldung</string>
+    <string name="nav_tickets">Meine Buchungen</string>
+    <string name="nav_conversation_history">Chat Historie</string>
+
+    <string name="loading_data">lade Daten</string>
+    <string name="hint_user">Benutzername</string>
+    <string name="hint_email">E-Mail Adresse</string>
+    <string name="hint_pass">Passwort</string>
+    <string name="username_or_email">E-Mail-Adresse</string>
+    <string name="hint_pass2">Passwort wiederholen</string>
+    <string name="update">Update</string>
+    <string name="book">Buchen</string>
+    <string name="price_low" formatted="false">Preis (ermäßigt): %s,-</string>
+    <string name="price_high" formatted="false">Preis (normal): %s,-</string>
+    <string name="passwords_dont_match">Passwörter stimmen nicht überein</string>
+    <string name="name">Name</string>
+    <string name="username">Benutzername</string>
+    <string name="register">Registrieren</string>
+    <string name="register_now">Jetzt registrieren</string>
+    <string name="set_username">Usernamen eingeben</string>
+    <string name="reset_password">Passwort vergessen?</string>
+    <string name="enter_correct_email">Bitte eine gültige E-Mail Adresse angeben!</string>
+    <string name="enter_correct_phone">Bitte eine gültige Telefonnummer angeben!</string>
+    <string name="register_error">Fehler beim Registrieren</string>
+    <string name="no_internet_error">Keine Verbindung mit dem Internet vorhanden</string>
+    <string name="reset_pass_email_fail">Informationen über die Passwortwiederherstellung konnten nicht an die angegebene Adresse gesendet werden.</string>
+    <string name="set_username_fail">Username kann nicht verwendet werden. Bitte ihre Interntetverbindung überprüfen.</string>
+    <string name="profile">Profil</string>
+    <string name="search">Suche</string>
+    <string name="call">Anruf</string>
+    <string name="map">Karte</string>
+    <string name="login">Anmelden</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="user_joined" formatted="false">%s ist beigetreten</string>
+    <string name="write_message">Ihre Anfrage...</string>
+    <string name="select_host">Dienst auswählen</string>
+
+    <string name="sync_sending">Senden...</string>
+    <string name="sync_failed">Wiederholen</string>
+    <string name="connection_restore">Verbinde...</string>
+    <string name="connection_reestablished">Erfolgreich verbunden</string>
+    <string name="try_again">Wiederholen</string>
+
+    <string name="today">Heute</string>
+    <string name="yesterday">Gestern</string>
+    <string name="day_format">%s •\u0020</string>
+    <string name="recent_date_format" formatted="false"> HH:mm aa</string>
+    <string name="month_date_format">dd.MM • HH:mm aa</string>
+    <string name="full_date_format">dd.MM.yyyy • HH:mm aa</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="monday">Montag</string>
+    <string name="tuesday">Dienstag</string>
+    <string name="wednesday">Mittwoch</string>
+    <string name="thursday">Donnerstag</string>
+    <string name="friday">Freitag</string>
+    <string name="saturday">Samstag</string>
+    <string name="sunday">Sonntag</string>
+    <string name="just_now">gerade eben</string>
+    <string name="suggested_connections">Vorschläge ansehen</string>
+    <string name="a_minute_ago">vor einer Mintute</string>
+    <string name="minutes_ago">" Minuten her"</string>
+    <string name="an_hour_ago">vor einer Stunde</string>
+    <string name="hours_ago">" Stunden her"</string>
+    <string name="days_ago">" Tage her"</string>
+    <string name="january">Januar</string>
+    <string name="february">Februar</string>
+    <string name="march">März</string>
+    <string name="april">April</string>
+    <string name="may">Mai</string>
+    <string name="june">Juni</string>
+    <string name="july">Juli</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">Oktober</string>
+    <string name="november">November</string>
+    <string name="december">Dezember</string>
+    <string name="check_in">Check in</string>
+    <string name="check_out">Check out</string>
+    <string name="duration">Dauer</string>
+    <string name="days">Tage</string>
+    <string name="confirmation_number">Bestätigungsnummer</string>
+    <string name="departs">Abfahrt</string>
+    <string name="arrives">Ankunft</string>
+    <string name="terminal">Terminal</string>
+    <string name="gate">Gate</string>
+    <string name="flight_duration">Flugdauer</string>
+    <string name="passenger_name">Name des Passagiers</string>
+    <string name="seat">Sitzplatz</string>
+    <string name="flight_duration_format" formatted="false">%d h. %d min</string>
+    <string name="app_not_found">Anwendung nicht gefunden</string>
+    <string name="int_tag">int_tag</string>
+    <string name="new_messages">Neue Nachrichten ↓</string>
+
+    <string name="class_type">Klasse</string>
+    <string name="from">Von:</string>
+    <string name="to">Nach:</string>
+    <string name="image_not_offline">Bild ist ohne Internetverbindung nicht verfügbar.</string>
+    <string name="image_error">Bild Fehler</string>
+    <string name="select_photo_source">Wähle Bild aus:</string>
+    <string name="please_give_us_access_to_your_files">Um Dateien hinzuzufügen sind Dateileserechte nötig.</string>
+    <string name="no_access_to_files_info">Um Dateien hinzuzufügen sind Dateileserechte nötig. Berechtigungen können in den App-Einstellungen geändert werden.</string>
+    <string name="uploading_file">Lade Datei hoch</string>
+    <string name="user_shared_photo_at" formatted="false">%s hat ein Bild %s geteilt</string>
+    <string name="user_shared_photo" formatted="false">%s hat ein Bild geteilt</string>
+    <string name="travel_duration">Reisedauer</string>
+    <string name="file_too_big_error">Datei ist zu groß...</string>
+    <string name="please_give_us_access_to_write_your_files">Um Bilder aufzunehmen sind Leserechte nötig.</string>
+    <string name="no_access_to_write_files_info">Um Bilder aufzunehmen sind Schreibrechte nötig. Berechtigungen können in den App-Einstellungen geändert werden.</string>
+    <string name="upload_failed">Dateiupload fehlgeschlagen. Bitte nochmals versuchen!</string>
+
+    <string name="reset_pass_email_sent">Passwort erfolgreich zurückgesetzt. Eine Nachricht wurde an die angegebene E-Mail Adresse versendet.</string>
+    <string name="login_failed">Anmeldung fehlgeschlagen! Bitte nochmals versuchen!</string>
+    <string name="hey_user" formatted="false">Hallo, %s!</string>
+    <string name="please_give_us_access_to_your_location">Um einen Standort zu teilen sind Standortberechtigungen nötig.</string>
+    <string name="no_access_to_location">Um einen Standort zu teilen sind Standortberechtigungen nötig. Berechtigungen können in den App-Einstellungen geändert werden.</string>
+    <string name="share">Teilen</string>
+    <string name="cancel">Abbrechen</string>
+
+    <string name="incorrect_password">Falsches Passwort</string>
+    <string name="invalid_file_type">Ungültiger Dateityp</string>
+    <string name="ok">OK</string>
+    <string name="server_error">Server Fehler</string>
+    <string name="email_exist_error">E-Mail Adresse bereits vorhanden. Bitte loggen Sie sich ein!</string>
+    <string name="username_taken">Benutzername ist bereits vergeben</string>
+    <string name="help_and_feedback">Hilfe und Feedback</string>
+    <string name="or">oder Login mit</string>
+    <string name="logout">Abmelden</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="no_account">Kein Account?</string>
+    <string name="bad_user_or_pass">Benutzername oder Passwort sind nicht korrekt</string>
+    <string name="user_does_not_exist">Benutzer existiert nicht</string>
+    <string name="image">Bild</string>
+    <string name="image_view_tag_source_file">IMAGE_VIEW_TAG_SOURCE_FILE</string>
+    <string name="image_view_tag_source_url">IMAGE_VIEW_TAG_SOURCE_URL</string>
+    <string name="google_cards_position_key">GOOGLE_CARDS_POSITION_KEY</string>
+    <string name="download_started">Herunterladen gestartet. Bitte Benachrichtigungsleiste überprüfen</string>
+    <string name="request_travelfolder_permission">Eine Anfrage auf Zugriff zum Reiseordner wurde gestellt</string>
+    <string name="request_access">Zugriffsanfrage</string>
+    <string name="request_access_query">Wenn Sie der Zugriffsanfrage zustimmen, erklären Sie die Einwilligung für die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten, die für die Erbringung unserer Leistungen erforderlich sind. Sie können Ihre Zustimmung jederzeit widerrufen.</string>
+    <string name="message_options_content">Wollen Sie die Nachricht erneut senden oder öffnen?</string>
+    <string name="resend">Senden wiederholen</string>
+    <string name="open">Öffnen</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="user_shared_file" formatted="false">%s hat eine Datei geteilt</string>
+    <string name="user_shared_location" formatted="false">%s hat einen Standort geteilt</string>
+    <string name="permission_granted">Sie haben Ihren Reiseordner freigegeben.</string>
+    <string name="permission_denied">Sie haben den Zugriff auf Ihren Reiseordner verweigert.</string>
+    <string name="permission_title">*zugriff_email*</string>
+    <string name="permission_email_check">*zugriff_email_check*</string>
+    <string name="feature_coming_soon">Dieses Feature wird bald verfügbar sein.</string>
+
+    <string name="payment_info">Bezahlinformationen</string>
+    <string name="private_address">Private Adresse</string>
+    <string name="billing_address">Rechnungsadresse</string>
+    <string name="contact_info">Kontaktinformationen</string>
+    <string name="personal_info">Persönliche Informationen</string>
+
+    <string name="title">Titel</string>
+    <string name="firstname">Vorname</string>
+    <string name="middlename">Zweitname</string>
+    <string name="lastname">Nachname</string>
+    <string name="birthdate">Geburtsdatum</string>
+    <string name="nationality">Nationalität</string>
+
+    <string name="address_line_1">Adresszeile 1</string>
+    <string name="address_line_2">Adresszeile 2</string>
+    <string name="city">Stadt</string>
+    <string name="state">Bundesland</string>
+    <string name="zip">PLZ</string>
+    <string name="country">Land</string>
+
+    <string name="email2">Private-E-Mail</string>
+    <string name="email">Buchungs-E-Mail</string>
+    <string name="phone">Telefonnummer</string>
+    <string name="contact_info_email_description">Diese Email wird für Buchungsbestätigungen verwendet. Bitte beachten: Bei Buchungen werden
+    wir diese E-Mail als Empfänger verwenden. Der Absender besteht aus einer alphanumerischen Zeichenfolge gefolgt von @oururl.com (z.B.
+    449axc-3a11-45cd@oururl.com). Prüfen Sie bei Problemen daher evtl. Ihren SPAM Ordner.</string>
+
+    <string name="company_name">Firmenname</string>
+    <string name="vat">Steuernummer</string>
+
+    <string name="credit_card">Kreditkarte</string>
+    <string name="default_payment_method">Zahlungsmethode</string>
+    <string name="activity">Aktivität</string>
+    <string name="Number">Nummer</string>
+    <string name="access_management">Zugriffsverwaltung</string>
+    <string name="access_management_item_title">Zugriff gewährt für andere Benutzer</string>
+    <string name="access_title">Zugriff</string>
+    <string name="activity_end">Endet</string>
+    <string name="activity_participant">Teilnehmer</string>
+    <string name="activity_start">Beginnt</string>
+    <string name="add">Hinzufügen</string>
+    <string name="address">Adresse</string>
+    <string name="airlines_to_avoid">Diese Fluglinien vermeiden</string>
+    <string name="all">Alle</string>
+    <string name="text">Text</string>
+    <string name="date">Datum</string>
+    <string name="amenities">Ausstattung</string>
+    <string name="anything_else">Noch etwas was Sie uns mitteilen wollen?</string>
+    <string name="application_number">Anmeldenummer</string>
+    <string name="back">Zurück</string>
+    <string name="back_to_login">Zurück zur Anmeldung</string>
+    <string name="bed_type">Bett</string>
+    <string name="begins">Beginnt</string>
+    <string name="booking_class_long_haul">Buchungsklasse - Langstrecke</string>
+    <string name="booking_class">Buchungsklasse</string>
+    <string name="booking_class_medium_haul">Buchungsklasse - Mittelstrecke</string>
+    <string name="booking_class_short_haul">Buchungsklasse - Kurzstrecke</string>
+    <string name="car">Fahrzeug</string>
+    <string name="car_collection_address">Abholadresse</string>
+    <string name="car_collection_date">Abholdatum</string>
+    <string name="car_preferences">Fahrzeugeigenschaften</string>
+    <string name="car_target_address">Zieladresse</string>
+    <string name="car_target_date">Zieldatum</string>
+    <string name="car_type">Fahrzeugtyp</string>
+    <string name="category">Kategorie</string>
+    <string name="city_of_issuance">Ausstellungsort</string>
+    <string name="close">Schließen</string>
+    <string name="concierge">Concierge</string>
+    <string name="country_of_issuance">Ausstellungsland</string>
+    <string name="currently_access_plural">Im Moment haben %d Nutzer Zugriff auf Ihr Profil.</string>
+    <string name="currently_access_singular">Im Moment hat %d Nutzer Zugriff auf Ihr Profil.</string>
+    <string name="currently_no_access">Im Moment haben keine anderen Benutzer Zugriff auf Ihr Profil.</string>
+    <string name="date_issued">Ausstellungsdatum</string>
+    <string name="dropoff_address">Zieladresse</string>
+    <string name="dropoff_date">Zieldatum</string>
+    <string name="enter_correct_name">Bitte gültigen Benutzernamen eingeben!</string>
+    <string name="fill_out_firstname">Bitte füllen Sie das Feld Vorname aus!</string>
+    <string name="fill_out_lastname">Bitte füllen Sie das Feld Nachname aus!</string>
+    <string name="enter_password">Bitte Passwort eingeben!</string>
+    <string name="esta">ESTA</string>
+    <string name="esta_header">ESTA</string>
+    <string name="expiry_date">Gültig bis</string>
+    <string name="extras">Extras</string>
+    <string name="flight_tickets">Tickets</string>
+    <string name="flights">Flüge</string>
+    <string name="form_list_addbutton">Hinzufügen</string>
+    <string name="form_list_number_field_placeholder">Nummer</string>
+    <string name="future">Zukünftige</string>
+    <string name="hotel">Hotel</string>
+    <string name="info">Informationen</string>
+    <string name="liveChatError">Keine Verbindung zum Live Chat. Bitte nochmals versuchen!</string>
+    <string name="location">Lage</string>
+    <string name="loyalty_programs">Treueprogramme</string>
+    <string name="meal_preferences">Bevorzugte Speise</string>
+    <string name="my_info">Meine Informationen</string>
+    <string name="more">Mehr</string>
+    <string name="my_information">Meine Informationen</string>
+    <string name="navigation_drawer_close">Seitenmenü schließen</string>
+    <string name="no_connection">Bitte Internetverbindung herstellen und App neu starten.</string>
+    <string name="options">Optionen</string>
+    <string name="passengers">Passagiere</string>
+    <string name="passport">Reisepass</string>
+    <string name="passport_number">Passnummer</string>
+    <string name="past">Vergangene</string>
+    <string name="preferred_airlines">Bevorzugte Fluglinien</string>
+    <string name="preferred_hotels">Bevorzugte Hotels</string>
+    <string name="preferred_rental_companies">Bevorzugte Leihunternehmen</string>
+    <string name="preferred_row">Bevorzugte Sitzreihe</string>
+    <string name="preferred_seat">Bevorzugter Sitzplatz</string>
+    <string name="profile_access_granted">Zugriff gewährt für andere Benutzer</string>
+    <string name="pull_to_refresh">Ziehen zum neu laden</string>
+    <string name="receivedFile">Sie haben eine Datei erhalten!</string>
+    <string name="rental_car">Mietwagen</string>
+    <string name="reservations">Buchungen</string>
+    <string name="reset_password_button">Zurücksetzen</string>
+    <string name="reset_password_title">Passwort zurücksetzen</string>
+    <string name="revoke_access">Zugriff wiederrufen</string>
+    <string name="room_location">Lage des Zimmers</string>
+    <string name="room_standard">Zimmerklasse</string>
+    <string name="seats">Sitzplätze</string>
+    <string name="train">Zug</string>
+    <string name="travel_preferences">Reiseeinstellungen</string>
+    <string name="updateProfileError">Benutzerprofil konnte nicht aktualisiert werden.</string>
+    <string name="valid_until">Gültig bis</string>
+    <string name="no_reservations_found">Keine Buchungen gefunden</string>
+    <string name="no_journeys_found">Keine Reisen gefunden</string>
+    <string name="travelfolder_not_loaded">Profil konnte nicht geladen werden!</string>
+    <string name="travelfolder_not_safed">Profil konnte nicht gespeichert werden!</string>
+    <string name="open_new_chat">Neuen Chat starten</string>
+    <string name="chat_closed">Der Chat wurde geschlossen.</string>
+    <string name="no_chats_available">Sie haben aktuell keine offenen Chats.</string>
+	<string name="no_history_available">Keine Chats gefunden.</string>
+    <string name="connection_error">Bitte prüfen Sie Ihre Internet Verbindung!</string>
+    <string name="username_register_format_error">Bitte verwenden Sie für Ihren Benutzernamen ausschließlich Buchstaben, Zahlen, \'_\', \'+\' oder \'-\'. Leerzeichen sind nicht valide!</string>
+    <string name="connection_error_hostname">Keine Verbindung zu Rocketchat \"%1$s\" möglich!</string>
+    <string name="app_version_info">Info\nAktuelle Version der App: %1$s</string>
+
+    <string name="is_billing_address_same">Rechnungsadresse ident</string>
+    <string name="nav_version_number">Versionsnummer</string>
+    <string name="loyalty_end">Ende des Treueprograms</string>
+</resources>

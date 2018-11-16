@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/activity_access_privilege_settings_imageview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_above="@+id/activity_access_privilege_settings_textview"
+			app:srcCompat="@drawable/icon_lock_open"/>
+
+		<android.support.v7.widget.AppCompatTextView
+			android:id="@+id/activity_access_privilege_settings_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="@dimen/margin_l"
+			android:layout_marginBottom="@dimen/margin_l"/>
+
+		<android.support.v7.widget.AppCompatButton
+			android:id="@+id/activity_access_privilege_settings_button"
+			style="@style/FormButton"
+			android:text="@string/revoke_access"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/activity_access_privilege_settings_textview"
+			android:paddingLeft="@dimen/margin_m"
+			android:paddingRight="@dimen/margin_m"/>
+
+	</RelativeLayout>
+
+</layout>

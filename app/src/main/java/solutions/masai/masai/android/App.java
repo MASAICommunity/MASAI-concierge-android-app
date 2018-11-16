@@ -76,6 +76,9 @@ public class App extends Application implements Foreground.Listener {
 
 	private void saveTravelFolderUser() {
 		final User user = ConnectionManager.getInstance().getUser();
+		if (user==null) {
+			return;
+		}
 		TravelfolderUser tfuser = TravelfolderUserRepo.getInstance().getTravelfolderUser();
 		BackendManager.getInstance().getBackendService().updateTravelfolderUser(tfuser, C.AUTHORIZATION_BEARER_PREFIX + user.getIdToken())
 				.enqueue(new Callback<okhttp3.ResponseBody>() {

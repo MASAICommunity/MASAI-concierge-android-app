@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|start"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_m">
+
+    <LinearLayout
+        android:id="@+id/conversation_item_logo"
+        android:layout_width="@dimen/conversation_list_logo_diameter"
+        android:layout_height="@dimen/conversation_list_logo_diameter"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_xs"
+        android:layout_marginEnd="@dimen/margin_m"
+        android:layout_marginLeft="@dimen/margin_m"
+        android:layout_marginRight="@dimen/margin_m"
+        android:layout_marginStart="@dimen/margin_m"
+        android:background="@drawable/circle_bg_red"
+        android:gravity="center"
+        android:padding="@dimen/margin_m">
+
+        <TextView
+            android:id="@+id/host_list_name_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_l"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/host_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/text_size_l" />
+
+</LinearLayout>

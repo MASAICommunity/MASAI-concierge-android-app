@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/message_item_margin_top"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/margin_xl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_s">
+
+        <TextView
+            android:id="@+id/message_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_m"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_item_their_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/message_item_their_logo"
+            android:layout_width="@dimen/chat_logo_diameter"
+            android:layout_height="@dimen/chat_logo_diameter"
+            android:layout_gravity="top"
+            android:layout_marginBottom="@dimen/margin_xs"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_s"
+            android:layout_marginStart="@dimen/margin_m"
+            android:background="@drawable/circle_bg_red"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/message_item_their_logo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_sl"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/message_item_their_logo_image"
+            android:layout_width="@dimen/chat_logo_diameter"
+            android:layout_height="@dimen/chat_logo_diameter"
+            android:layout_gravity="top"
+            android:layout_marginBottom="@dimen/margin_xs"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_s"
+            android:layout_marginStart="@dimen/margin_m"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_item_their_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/message_margin_7xl"
+                android:layout_marginRight="@dimen/message_margin_7xl"
+                android:background="@drawable/round_bg_red"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white" />
+
+            <TextView
+                android:id="@+id/message_item_their_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_m"
+                android:layout_marginStart="@dimen/margin_m"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_item_my_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin_s"
+        android:paddingLeft="@dimen/message_margin_7xl"
+        android:paddingRight="@dimen/margin_s"
+        android:paddingStart="@dimen/message_margin_7xl">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/message_item_my_message_state_ic"
+            android:layout_toStartOf="@+id/message_item_my_message_state_ic"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <solutions.masai.masai.android.chat.CustomImageView
+                android:id="@+id/message_item_my_map_view"
+                android:layout_width="@dimen/chat_view_map_view_width"
+                android:layout_height="@dimen/chat_view_map_view_height"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/message_item_my_map_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_round_bg_flat_blue"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/message_item_my_message_time_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_m"
+                android:layout_marginRight="@dimen/margin_m"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_item_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/message_item_my_message_state_ic"
+            android:layout_toStartOf="@+id/message_item_my_message_state_ic"
+            android:background="@drawable/round_bg_flat_blue"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/message_item_my_message_state_ic"
+            android:layout_width="@dimen/status_circle_diameter"
+            android:layout_height="@dimen/status_circle_diameter"
+            android:layout_alignBottom="@+id/message_item_my_message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_xs"
+            android:layout_marginStart="@dimen/margin_xs"
+            android:background="@drawable/circle_bg_blue"
+            android:padding="@dimen/margin_s" />
+
+        <TextView
+            android:id="@+id/message_item_my_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/message_item_my_message"
+            android:layout_alignRight="@id/message_item_my_message"
+            android:layout_below="@id/message_item_my_message"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:textSize="@dimen/text_size_s" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_item_image_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/message_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginBottom="@dimen/image_text_height_half"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/message_item_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_text_height"
+            android:layout_alignBaseline="@+id/message_item_image"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_bg_flat_blue"
+            android:gravity="center"
+            android:padding="@dimen/margin_s"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_m" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_text_height"
+            android:layout_alignBaseline="@+id/message_item_image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:layout_marginRight="@dimen/margin_s"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/message_item_image_status"
+                android:layout_width="@dimen/status_circle_diameter"
+                android:layout_height="@dimen/status_circle_diameter"
+                android:layout_marginLeft="@dimen/margin_xs"
+                android:layout_marginStart="@dimen/margin_xs"
+                android:background="@drawable/circle_bg_blue"
+                android:padding="@dimen/margin_s" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="@dimen/margin_l"
+        android:orientation="vertical"
+        android:id="@+id/message_item_interpretation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
